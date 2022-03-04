@@ -1,0 +1,12 @@
+\newcommand\LDAtxt{Texte de base}
+\newcommand\LDAlex{Rubrique lexicale}
+\newcommand\LDAgram{Rubrique grammaticale}
+\newcommand\LDAex[1]{Exercice #1}
+\newcommand\LDALex{Approfondissement lexical}
+\newcommand\LDAtc{Th\`eme de contr\^ole}
+\newcommand\LDAdisk{Diskussions - und Aufsatzthemen}
+\newcommand\LDAint{intitul\'e}
+
+%Autres
+
+\newcommand*\LDAnote[1]{\sidenote{#1}}

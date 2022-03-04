@@ -1,0 +1,104 @@
+\documentclass[
+  %a4paper,
+  12pt]
+{scrbook}%reprt} 
+\RequirePackage[german, french]{babel} %French is the default
+\RequirePackage[T1]{fontenc}
+\RequirePackage{scrlayer-scrpage}
+\RequirePackage{comment}
+\RequirePackage{exercise}
+%Workaround
+\renewcommand\ExerciseName{Exercice}
+\renewcommand\AnswerName{Solution de l'exercice}
+\RequirePackage[short, nodayofweek]{datetime}
+\RequirePackage{xr} % {xr-hyper} % {zref-xr} % \externaldocument{chapterI}
+\externaldocument[O-]{lecondall-original}% [O-]{lecondall-original.tex}
+%\RequirePackage{sidenotes}%{marginnote} 
+%\RequirePackage[useregional]{datetime2}
+%\RequirePackage{paracol}%textcol
+\RequirePackage{graphbox}
+%\RequirePackage[usenames, dvipsnames]{color} % textcol
+%\RequirePackage{yfonts} % textfrak
+\RequirePackage{natbib} %[numbers]
+%\RequirePackage{biblatex}
+\RequirePackage{anyfontsize}
+\RequirePackage{t1enc}
+\RequirePackage{yfonts}
+\RequirePackage{latexsym}
+\newcommand\HUGE{\fontsize{50}{60} \selectfont}
+%\newcommand\HUGE{\fontsize{50}{60} \selectfont}
+\RequirePackage{hyperref}
+
+\newcommand\germanbegin[1]{\begin{otherlanguage*}{german}}
+\newcommand\germanend[1]{\end{otherlanguage*}{german}}
+\newcommand\envirgerman[1]{\begin{otherlanguage*}{german}#1\end{otherlanguage*}}
+\input{lecondall-macro.tex}
+
+\pagestyle{scrheadings}
+\rohead[Copyright (c) {\censor{Erwann Rogard}}, 2016]{}
+\lohead[Recipient:]{}
+
+
+%\newcommand{\mydate}{\DTMdisplaydate{1994}{6}{3}{-1}}
+ 
+\begin{document}
+
+\begin{titlepage}
+%{\HUGE La le\c con d'Allemand syst\'ematique\\ Solutions}
+%}
+\begin{center}
+\includegraphics[
+	align=c,
+	width=0.5\textwidth]{berlincoatofarms.png}
+%  \qquad
+\begin{minipage}{0.45\textwidth}
+%\textswab{Allemand}
+\textbf{\HUGE La le\c con\\ d'\textgoth{Allemand} syst\'ematique.}
+\end{minipage}
+\vspace*{\fill}
+
+\textbf{\HUGE Les solutions aux exercices}
+
+\vspace*{\fill}
+
+\textbf{{\censor{Erwann Rogard}}; version du \today}
+
+\end{center}
+\end{titlepage}
+
+\chapter*{Introduction}
+
+Ce livre contient mes r\'eponses aux exercices (entendus au sens large, explication \`a suivre) de la premi\`ere partie du livre pour les classes pr\'eparatoires et de lyc\'ee intitul\'e \emph{\ldaTTL}\citep{demarche1989}, pour la suite, l'\og original\fg. 
+
+J'ai fait ce travail pour que mon apprentissage de l'Allemand, qui remonte \`a mes ann\'ees de coll\`ege, lyc\'ee (le bac en 1991) et fac, quasiment dormant depuis lors, mais remis \`a jour, un peu par hasard, entre l'automne 2013 et le printemps 2014, ne reste pas en friche. 
+
+Pourquoi \emph{\ldaTTL}? Parce qu'il avait surv\'ecu aux \'elaguements successifs de mes affaires scolaires et universitaires. Avec ses textes ardus et `vintage' \footnote{Recensement des ann\'ees de publication des `\ldaTXT' des 20 le\c cons syst\'ematiques: 1944, 1987, 1983, 1978, 1985, 1981,  1925, 1985, 1944, 1985, 1986, 1977, 1987, 1981, 1981, 1985, 1987, 1986, 1986.}, en arrivant au bout de ses 20 le\c cons syst\'ematiques, j'aurais ainsi le sentiment de la t\^ache accomplie. 
+
+Dans l'original, chaque chapitre est structur\'e comme suit. Figurent en gras les sections pour lesquels ce livre apporte des propositions de solutions: 
+\begin{itemize}
+\item \ldaTXT
+\item \ldaLEX, comprenant deux sous-sections, \ldaLEXa~et \ldaLEXb. 
+\item \ldaGRAM
+\item \textbf{\ldaEXs}
+\item \ldaLEXc
+\item \textbf{\nameref{O-spiel:theme}}
+\item \nameref{O-spiel:disk} (mini-essais \`a r\'ediger par l'\'el\`eve)
+\end{itemize}
+%Ici, les deux derni\`eres sections sont int\'egr\'ees \`a la liste des exercices num\'erot\'es, avec en titre leur intitul\'e d'origine pour les distinguer du reste. %Par exemple, au \autoref{O-ch:spiel}, ces deux sections sont \og\mbox{\ExerciseName~\autoref{spiel:theme} \qquad \nameref{O-spiel:theme}}\fg~et \og\mbox{\ExerciseName~\autoref{spiel:disk} \qquad \nameref{O-spiel:disk}}\fg.
+
+Les \'enonc\'es sont repris tels quels, \'eventuellement amend\'es d'un renvoi \`a la section de l'original qui lui est pertinente, soit dans le titre de l'exercice, soit pr\'ec\'ed\'e de `\ldaINDIC', \`a la suite de l'\'enonc\'e. 
+
+Ce livre a \'et\'e r\'ealis\'e avec la le logiciel libre \LaTeX, pr\'ecis\'ement avec la classe \texttt{scrbook}.
+
+%\input{lecondall-sol-ch1.tex}
+%\input{lecondall-sol-ch2.tex}
+%\input{lecondall-sol-ch3.tex}
+\input{lecondall-sol-ch4.tex}
+\input{lecondall-sol-ch5.tex}
+
+%\listofexercises
+%\ListOfExerciseInToc
+\tableofcontents
+\bibliographystyle{plainnat}
+\bibliography{lang}
+\end{document}

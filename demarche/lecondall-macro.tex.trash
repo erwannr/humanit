@@ -1,0 +1,61 @@
+\input{ERWANN-macro-fr-notes.tex}
+% Envir
+
+\newcommand\LDAdemarking[1]{#1
+%bug prone, so leave empty, for now
+%\colorbox{green}{#1}
+%%\textcolor{green}{#1} 
+}
+
+
+\newcommand\LDAde[1]{% Warning: chapters don't take envirgerman
+	\envirgerman{#1}
+}
+
+% Marking
+\newcommand\ldaBLANK{\underline{\hspace{1cm}}}
+
+
+% Structure
+
+\newcommand\ldaTTL{La Le\c con d'Allemand Syst\'ematique}
+
+\newcommand\ldaTXT{Texte de base}
+\newcommand\ldaLEX{Rubrique lexicale}
+\newcommand\ldaLEXa{$1\geq2$}
+\newcommand\ldaLEXb{$10/10$}
+\newcommand\ldaGRAM{Rubrique grammaticale}
+\newcommand\ldaEX[1]{Exercice #1}
+\newcommand\ldaEXs{Exercices}
+\newcommand\ldaLEXc{Approfondissement lexical}
+\newcommand\ldaTHEME{Th\`eme de contr\^ole}
+\newcommand\ldaTHEMEsol{Solution au th\`eme de contr\^ole}
+\newcommand\ldaDISK{Diskussions - und Aufsatzthemen}
+
+\newcommand\LDAint{intitul\'e}%what for?
+
+\newcommand\ldaAUTHOR{Jean-Pierre Demarche}
+
+% Notes
+
+%\newcommand*\LDAnote[1]{\sidenote{#1}}
+\newcommand*\ldaVERIF{\noteverifier}
+\newcommand*\ldaAF{\notefaire}
+\newcommand*\ldaALT{\notesinon}
+
+% Remplacements
+
+\newcommand\ldaVERBE[1]{#1}% sur le mod\`ele de
+\newcommand\ldaCONJ[1]{#1}%conjonction
+\newcommand\ldaFORME[1]{#1}%forme
+\newcommand\ldaUSAGE[1]{#1}%usage
+\newcommand\ldaPREPOS[1]{#1}%preposition
+
+% Autres
+
+\newcommand\ldaVERBEpart[2]{#1|#2}
+%\newcommand\LDAindicsol[2]{\begin{tabular}{l|l}#1&#2\end{tabular}}
+\newcommand\ldaSOL[1]{\textbf{\noindent Solution:}}
+\newcommand\ldaINDIC{\textbf{\noindent Indication:}}
+
+

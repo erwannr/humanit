@@ -1,0 +1,40 @@
+\documentclass[
+  %a4paper,
+  12pt]
+{scrbook}%reprt} 
+\usepackage{scrlayer-scrpage}
+\pagestyle{scrheadings}
+\rohead[Copyright (c) Erwann Rogard, 2016]{}
+\lohead[Recipient:]{}
+
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage[german,french]{babel} % french default language
+\usepackage[useregional]{datetime2}
+\usepackage{titling}
+\usepackage[short, nodayofweek]{datetime}
+\usepackage{sidenotes}%{marginnote} 
+
+\usepackage{xr} % {xr-hyper} % {zref-xr} % \externaldocument{chapterI}
+\externaldocument{lecondall-original}% [O-]{lecondall-original.tex}
+
+%\newcommand{\mydate}{\DTMdisplaydate{1994}{6}{3}{-1}}
+
+\input{ERWANN-macro-de.tex}
+\input{ERWANN-macro-text.tex}
+\input{lecondall-macro.tex}
+
+\title{La le\c con d'Allemand syst\'ematique -- Solutions}
+\author{Erwann Rogard}
+ 
+\begin{document}
+\maketitle
+
+\part{}
+%\input{lecondall-part1-ch1.tex}
+%\input{lecondall-part1-ch2.tex}
+%\input{lecondall-part1-ch3.tex}
+%\input{lecondall-part1-ch4.tex}
+\input{lecondall-part1-ch5.tex}
+
+\end{document}
